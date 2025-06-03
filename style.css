@@ -1,0 +1,153 @@
+/* Sayfanın genel düzeni */
+
+body {
+    font-family: "Birthstone", cursive;
+    font-weight: bold;
+    font-size: 100;
+    font-style: normal;
+    text-align: center;
+    padding: 20px;
+    background-image: url(427470.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#bigbox {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    background-image: url(coffee-background-mxi5tjwxedm9bx0r.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    padding: 20px; /* İç boşluk ekler */
+    box-shadow: 7px 7px 14px #060606; /* Hafif bir gölge */
+}
+
+#lbl{
+    color: rgb(21, 21, 21);
+    font-size: xx-large;
+    text-shadow: 0px 4px 10px #fcfcfc;
+}
+  
+
+#output{
+    color: rgb(21, 21, 21);
+    font-size: xx-large;
+    text-shadow: 0px 4px 10px #fcfcfc;
+    
+}
+
+
+/* Kahve Otomatı başlığı */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 4px 10px #fcfcfc;
+}
+
+/* Menü, ödeme ve diğer butonların düzeni */
+#menu, #payment, #actions {
+    margin-bottom: 20px;
+}
+
+/* Butonların stilini iyileştirmek */
+button {
+    font-family: "Birthstone", cursive;
+    font-weight: bold;
+    font-style: normal;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input {
+    padding: 8px;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+    
+}
+
+
+.hidden{
+    display: none;
+}
+
+/* Mobil cihazlar için (genişlik 600px veya daha küçük) */
+@media (max-width: 600px) {
+    /* Tüm kutunun genişliği mobilde ekran boyutuna uyacak şekilde */
+    #bigbox {
+        width: 90%; /* Ekranın %90'ını kaplasın */
+        padding: 10px;
+    }
+
+    /* Başlık boyutunu küçültmek */
+    h1 {
+        font-size: 36px; /* Mobilde daha küçük font boyutu */
+    }
+
+    /* Butonları ve ödeme alanını daha küçük hale getirmek */
+    button {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+
+    input {
+        width: 80%;
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    /* #lbl ve #output boyutlarını küçültmek */
+    #lbl, #output {
+        font-size: large;
+    }
+}
+
+/* Tablet cihazlar için (600px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    #bigbox {
+        width: 80%; /* Tablet ekranına göre genişlik */
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 42px; /* Tablet ekranında orta boyut */
+    }
+
+    button {
+        font-size: 22px;
+        padding: 8px 18px;
+    }
+
+    input {
+        width: 70%;
+        font-size: 15px;
+    }
+
+    #lbl, #output {
+        font-size: x-large;
+    }
+}
+
+/* Daha büyük ekranlar için (masaüstü) */
+@media (min-width: 901px) {
+    #bigbox {
+        width: 500px;
+    }
+}

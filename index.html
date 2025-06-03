@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kahve Otomatı</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Birthstone&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="bigbox">
+      <h1 onclick="showButtons()">Kahve Otomatı</h1>
+
+      <div id="menu">
+        <button onclick="selectDrink('Espresso')">Espresso</button>
+        <button onclick="selectDrink('Latte')">Latte</button>
+        <button onclick="selectDrink('Cappuccino')">Cappuccino</button>
+        <button onclick="selectDrink('Americano')">Americano</button>
+        <button onclick="selectDrink('Macchiato')">Macchiato</button>
+        <button onclick="selectDrink('Mocha')">Mocha</button>
+        <button onclick="selectDrink('TürkKahvesi')">Türk Kahvesi</button>
+        <button onclick="selectDrink('FiltreKahve')">Filtre Kahve</button>
+      </div>
+
+      <div id="payment">
+        <label id="lbl" for="paymentAmount">Ödeme Yapınız:</label>
+        <input type="number" id="paymentAmount" placeholder="Miktar giriniz" />
+        <button onclick="makePayment()">Ödeme Yap</button>
+      </div>
+
+      <div id="actions">
+        <button class="hidden" id="showReportButton" onclick="showReport()">
+          Raporu Görüntüle
+        </button>
+        <button class="hidden" id="turnOffButton" onclick="turnoff()">
+          Makineyi Kapat
+        </button>
+      </div>
+
+      <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
